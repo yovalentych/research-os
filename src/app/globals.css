@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4efe5;
+  --foreground: #1c1913;
+  --accent: #b5522e;
+  --accent-strong: #7f2d15;
+  --surface: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-pt-serif);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-pt-serif), ui-serif, Georgia, serif;
+}
+
+.rich-text-editor .ql-toolbar {
+  border-radius: 16px 16px 0 0;
+  border-color: #e2e8f0;
+  background: #f8fafc;
+}
+
+.rich-text-editor .ql-container {
+  border-radius: 0 0 16px 16px;
+  border-color: #e2e8f0;
+  background: #ffffff;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+}
+
+.rich-text-editor .ql-editor {
+  min-height: 140px;
+  font-size: 0.875rem;
+}
+
+.rich-text-editor .ql-editor img,
+.rich-text-viewer .ql-editor img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rich-text-viewer {
+  border: none;
+  background: transparent;
+}
+
+.rich-text-viewer .ql-editor {
+  padding: 0;
+  font-size: 0.875rem;
+  color: #475569;
+}
